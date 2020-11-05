@@ -1,0 +1,47 @@
+:root{
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: var(--montserrat);
+    -webkit-font-smoothing: antialiased;
+    background: #1C4EB1
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-options{
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    display: block;
+    padding: 0 15px;
+}
+
+a:hover{
+    transition: 1s;
+    color: #cccccc
+}
