@@ -102,6 +102,9 @@ main {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .call-to-action {
+        font-size: 25px;
+    }
 
     .menu-options{
         display: none;
@@ -126,6 +129,10 @@ main {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .call-to-action {
+        font-size: 36px;
+    }
+
     .call-to-action .button {
         align-self: flex-start;
     }
