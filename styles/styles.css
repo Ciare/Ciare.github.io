@@ -1,3 +1,5 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,4 +11,35 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
+    color: #fff;
+}
+
+input, button {
+    outline: none;
+}
+
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header#main-header{
+    display: flex;
+    justify-content: space-between;
+    height: 192px;
+}
+
+header#main-header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header#main-header nav ul li{
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 70px;
+    margin-top: 47px;
 }
