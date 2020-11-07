@@ -16,11 +16,13 @@
 <body>
     <header id="main-header">
         <div class="defaults">
-            <img src="./assets/logo-left-top.svg" alt="Logo Ciare" />
+            <img id="leftTopLogo" src="./assets/logo-left-top.svg" alt="Logo Ciare" />
 
-            <i class="hamburguer-menu fas fa-bars"></i>
+            <a href="javascript:void(0)" onclick="handleHamburguerMenu()">
+                <i class="hamburguer-menu fas fa-bars"></i>
+            </a>
         </div>
-        <nav>
+        <nav id="menu-options">
             <ul>
                 <li>Download</li>
                 <li>Features</li>
@@ -74,6 +76,8 @@
     <footer>
         2020, Ciare &copy; &nbsp;
     </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
