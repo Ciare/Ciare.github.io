@@ -18,9 +18,14 @@ input, button {
     outline: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .content {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 /* HEADER */
@@ -29,6 +34,7 @@ header#main-header{
     display: flex;
     justify-content: space-between;
     height: 192px;
+    margin-bottom: 45px;
 }
 
 header#main-header nav ul{
@@ -40,6 +46,36 @@ header#main-header nav ul{
 header#main-header nav ul li{
     font-size: 24px;
     font-weight: bold;
+    /*TIRAR MARGIN RIGHT EM MOBILE DEVICES*/
     margin-right: 70px;
     margin-top: 47px;
+}
+
+/* DOWNLOAD */
+
+div#download{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div#download .call-to-action{
+    max-width: 635px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+div#download .call-to-action a{
+    display: block;
+
+    color: #F1AA50;
+    border: 2px solid #F1AA50;
+    border-radius: 45px;
+
+    max-width: 400px;
+    padding: 10px;
+    margin: 50px 0;
+
+    text-align: center;
 }
