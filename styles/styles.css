@@ -44,6 +44,20 @@ header#main-header{
     color: #F5F5F5;
 }
 
+header#main-header .defaults{
+    display: flex;
+    justify-content: space-between;
+}
+
+header#main-header .defaults{
+    display: flex;
+    justify-content: space-between;
+}
+
+header#main-header .defaults .hamburguer-menu{
+    display: none;
+}
+
 header#main-header nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +66,6 @@ header#main-header nav ul{
 header#main-header nav ul li{
     font-size: 24px;
     font-weight: bold;
-    /*TIRAR MARGIN RIGHT EM MOBILE DEVICES*/
     margin-right: 70px;
     margin-top: 47px;
 }
@@ -69,10 +82,14 @@ div#download{
 }
 
 div#download .call-to-action{
+    display: flex;
+    flex-direction: column;
     max-width: 635px;
     font-size: 36px;
     font-weight: bold;
 }
+
+/* CALL-TO-ACTION BUTTON */
 
 .link-button{
     display: block;
@@ -138,7 +155,6 @@ div#contact{
 }
 
 div#contact h1{
-
     font-size: 64px;
     text-align: center;
 }
@@ -156,9 +172,89 @@ div#contact .link-button{
     margin: 0;
 }
 
-/* */
-
 footer{
     display: flex;
     flex-direction: row-reverse;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 992px) {
+
+    /* HEADER */
+
+    header#main-header{
+        background-color: black;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 250px;
+    }
+
+    header#main-header img{ 
+        height: 100px;
+    }
+
+    header#main-header .defaults{
+        width: 100%;
+    }
+
+    header#main-header .defaults .hamburguer-menu{
+        display: block;
+        padding: 20px;
+        font-size: 2.5rem;
+    }
+
+    header#main-header nav{
+        width: 100%;
+        text-align: center;
+    }
+
+    header#main-header nav ul{
+        flex-direction: column;
+        background: #000;
+    }
+
+    header#main-header nav ul li {
+        margin-right: 0;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    header#main-header nav ul li:first-child {
+        margin-top: 0;
+    }
+
+    /* CALL TO ACTION */
+
+    div#download .call-to-action{
+        align-items: center;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    div#download .call-to-action a{
+        align-items: center;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* CONTACT */
+
+    div#contact h1{
+        font-size: 36px;
+    }
+    
+    div#contact h2{
+        font-size: 24px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px){ 
+    header#main-header{ 
+        height: 300px;
+    }
+
+    header#main-header img{ 
+        height: 150px;
+    }
 }
