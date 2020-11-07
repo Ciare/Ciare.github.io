@@ -74,7 +74,7 @@ div#download .call-to-action{
     font-weight: bold;
 }
 
-div#download .call-to-action a{
+.link-button{
     display: block;
 
     color: #F1AA50;
@@ -91,14 +91,18 @@ div#download .call-to-action a{
 /* FEATURES SCREENSHOTS */
 
 div#features{
-    height: 1024px;
+    min-height: 1024px;
+    display: flex;
+
     align-items: center;
+    justify-content: center;
 
     color: #F9F9F9;
 }
 
 div#features ul{
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -120,4 +124,41 @@ div#features ul li p{
     text-align: center;
 
     margin: 15px 0;
+}
+
+/* CONTACT */
+
+div#contact{
+    min-height: 1024px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#contact h1{
+
+    font-size: 64px;
+    text-align: center;
+}
+
+div#contact h2{
+    font-size: 24px;
+    text-align: center;
+    max-width: 645px;
+
+    margin: 10px 0 40px;
+}
+
+div#contact .link-button{
+    width: 200px;
+    margin: 0;
+}
+
+/* */
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
 }
